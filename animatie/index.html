@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animatie</title>
+
+    <style>
+
+           @keyframes my-animation{
+              0% {background-color: #fb5dad;}
+              50%{background-color: #b97aff;}
+              100%{background-color: #55fb9f;}
+        
+            }
+    
+    
+           #box-container{
+                width: 600px;
+                height: 600px;
+                position: relative;
+                margin: 0 auto;
+                padding: 16px;
+                perspective: 400px;
+                background-color: #050210;
+            }
+
+            #div-1{
+               width: 400px;
+               height: 400px;
+               left: 0;
+               right: 0;
+               margin: 0 auto;
+               padding: 20px;
+               position:relative;
+               top: 70px;
+
+               transform: rotate(20deg);
+
+               border-radius: 100%;
+               background-color: #fb5dad,#55fb9f,#b97aff ;
+        
+        
+            }
+
+            .box1{
+               animation-name : my-animation;
+               animation-duration: 2s;
+               animation-iteration-count:infinite;
+        
+               transform: translateX(150vh);
+               transform: translateY(150vh);
+               transform: translateZ(150vh);
+            }
+
+            #div-2{
+               width: 350px;
+               height: 350px;
+               left: 0;
+               right: 0;
+               margin: 0 auto;
+               top: 15px;
+               padding: 10px;
+               position:relative;
+               border-radius: 100%;
+        
+            }
+      
+
+           .box2{
+               background-color: #050210;
+               animation: glow 3s infinite alternate;
+        
+            }
+       
+
+    </style>
+</head>
+<body>
+    <div  id="box-container">
+        <div id="div-1"class="box1">
+          <div id="div-2"class="box2"></div>
+         </div>
+        </div>
+    
+          
+    </div >
+
+</body>
+</html>
